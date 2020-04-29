@@ -19,3 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/suggestion', 'SuggestionController@getSuggestion');
 Route::post('/suggestion', 'SuggestionController@setSuggestion');
+Route::post('/weight', 'SuggestionController@updateWeight');
